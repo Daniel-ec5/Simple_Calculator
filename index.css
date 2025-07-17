@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 350px;
+    height:400px;
+    margin-top: 3em;
+    align-self: center;
+    justify-self: center;
+    padding: .4px;
+    display: flex;
+    flex-direction: column;
+    gap:.5em;
+    color:white;
+    font-family: "Roboto Mono", monospace;
+    border-radius: 10px ;
+}
+.container div{
+    background-color:rgba(118, 116, 116, 0.767);
+    
+}
+#backspace-img{
+    width:20px;
+    min-height:25px;
+    cursor: pointer;
+    float:right;
+    scale: 1.5em;
+}
+#backspace-img:hover{
+    filter: invert(1);
+}
+#num_sign{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding:15px;
+    margin: 5px;
+    font-size: 2em;
+    border-radius: 10px;
+}
+#num_sign span{
+    background-color: rgb(17, 1, 1);
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#sm_equals{
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+#sm_equals:hover{
+    color: red;
+}
+#calc_res{
+    background-color:rgba(118, 116, 116, 0.767);
+    display:flex;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+}
+#calculation{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.2em;
+    border-top-left-radius:inherit;
+    border-top-right-radius:inherit;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+   
+}
+#result{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.5em;
+    border-top-left-radius:0px ;
+    border-top-right-radius:0px ;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+#num_sign span {
+    display: block;
+}
+span.utility:hover{
+    color:rgb(153, 21, 235);
+}
+span.operation:hover{
+    color: rgb(255, 0, 0);
+}
+span.number:hover{
+    color: rgb(0, 255, 0);
+}
+#num_sign #equal{
+    background-color: papayawhip;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+#num_sign span:hover{
+    background-color:rgba(118, 116, 116, 0.767);
+    transition: background-color 0.3s ease;
+}
+#calculation-holder{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+    
